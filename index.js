@@ -17,10 +17,8 @@ const appendKitten = (name) => {
   return kittensUpdated;
 }  
 
-const prependKitten = (name) => {
-  let kittensUpdated = [name,...kittens];
+const prependKitten = (name) => let kittensUpdated = [name,...kittens];
   
-  return kittensUpdated;
 }  
 
 
