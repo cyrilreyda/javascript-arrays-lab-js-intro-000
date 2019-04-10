@@ -9,7 +9,7 @@ const destructivelyRemoveLastKitten = () => kittens.pop();
 
 const destructivelyRemoveFirstKitten = () => kittens.shift();
 
-let kittensUpdated = [...kittens]
+let kittensUpdated = [...kittens];
 
 const appendKitten = (name) => kittensUpdated.push(name);
 
