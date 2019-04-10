@@ -11,9 +11,15 @@ const destructivelyRemoveFirstKitten = () => kittens.shift();
 
 
 const appendKitten = (name) => {
-  let kittensUpdated = [...kittens];
-  kittensUpdated.push(name);
+  let kittensUpdated = kittens.concat(name);
   return kittensUpdated;
 }  
+
+const prependKitten = (name) => {
+  let kittensUpdated = [name,...kittens];
+  
+  return kittensUpdated;
+}  
+
 
 
