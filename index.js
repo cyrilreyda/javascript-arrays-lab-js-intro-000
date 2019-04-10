@@ -12,7 +12,8 @@ const destructivelyRemoveFirstKitten = () => kittens.shift();
 let kittensUpdated = [...kittens];
 
 function appendKitten(name) {
-  return kittensUpdated.push(name);
+  kittensUpdated.push(name);
+  return kittensUpdated;
 }  
 
 
